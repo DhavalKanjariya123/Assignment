@@ -1,0 +1,38 @@
+<!-- How are active links different from normal links?
+
+Normal links:
+The default color is blue color and underlined but you can apply your own custom styling according to the application’s need.
+
+Active links:
+If you left or right-click on links. it will turn into yellow and remove Underline.
+Active Links shows that the browser is in the process to load a new resource
+You can do your own custom styling using CSS :active selector. 
+
+Example of active link is mentioned below:
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is a Link</h2>
+    <h1>
+        Welcome to
+        <a target="_blank" href="https://www.geeksforgeeks.org/">
+            GeeksforGeeks
+        </a>
+    </h1>
+</body>
+
+</html>
