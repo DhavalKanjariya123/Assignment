@@ -1,0 +1,39 @@
+<!--  How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery,
+      JQuery Animation?
+   -->
+
+<!-- Remove class Using JQuery -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+   <script>
+      $(document).ready(function () {
+            $("div").removeClass("main");  //remove class using jquery
+      });
+   </script>
+   <style>
+      .main{
+         background-color: black;
+         color: white;
+         font-size: 18px;
+         padding: 10px;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="main">
+      <h1>Introduction</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut, aliquam at beatae, commodi
+         blanditiis esse eum, recusandae illum sit eaque quia sapiente libero pariatur illo obcaecati mollitia sequi
+         nam?</p>
+   </div>
+</body>
+
+</html>

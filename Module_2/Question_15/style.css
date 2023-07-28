@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+h2, p {
+    margin: 5px;
+    color: black;
+    background-color: white;
+    text-align: justify;
+}

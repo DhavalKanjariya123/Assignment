@@ -1,0 +1,45 @@
+
+
+<!-- Club two or more rows or coloums into a single row or coloum in HTML table.
+
+   Club two or more coloums by using colspan
+   Club two or more rows by using rowspan
+
+   Example of colspan and rowspan is mentioned below:
+   -->
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>   
+         body{   
+            width: 50%;
+            margin: auto;
+         }
+         
+      </style>
+   </head>
+   <body>
+      <caption>Club of coloumns and Rows</caption> <br>
+      <table border="1" width="500px" height="auto" cellspacing="10" cellpadding="10" >
+         <tr>
+            <th rowspan="2">Detail of children</th>    <!--Club two or more rows by using rowspan-->
+          <th>Child-1</th>
+          <td><input type="text"></td><br>
+       </tr>
+       <tr>
+         
+          <th>Child-2</th>
+          <td><input type="text"></td>
+       </tr>
+       <tr>
+          <td colspan="3" align="center"><input type="Submit" name="Login" placeholder="Login"></td> <!--Club two or more coloums-->
+       </tr>
+       </table>
+   </body>
+   </html>

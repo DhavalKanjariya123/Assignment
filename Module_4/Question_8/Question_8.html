@@ -1,0 +1,20 @@
+<!-- How to read and write a file using JavaScript?
+
+  
+-->
+
+<script>
+const fs = require('fs');
+// Specify the file path you want to read
+const filePath = 'example.txt';
+
+// Read the file content asynchronously
+fs.readFile(filePath, 'utf8', (err, data) => {
+  if (err) {
+    console.error('Error reading the file:', err);
+    return;
+  }
+  console.log('File content:');
+  console.log(data);
+});
+</script>

@@ -1,0 +1,32 @@
+<!-- Write the code for adding new elements dynamically??
+
+   Example:
+   -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+   </head>
+   <body>
+      <center>
+         Your Name: <input id="ele" type="text"> <br> <br>  <!-- first element add -->
+         Your Course Name: <input id="course" type="text"> <br> <br> <!-- second element add -->
+         <button id="btn" onclick="clk()">Click here to Add Element</button>
+         <p id="demo"></p>  <!-- prient element dynamically-->
+      </center>
+      
+      <script>
+         function clk() {   // call a function 
+            let element=document.getElementById("ele").value;
+            let element1=document.getElementById("course").value;
+            document.getElementById("demo").innerHTML= `My name is: ${element} and My course name is: ${element1}`;
+         }
+      </script>
+   </body>
+   </html>
+
+   

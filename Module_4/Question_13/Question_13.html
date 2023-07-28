@@ -1,0 +1,37 @@
+<!-- What is the function of the delete operator?
+
+      operator is more specifically used to delete JavaScript object properties.
+
+      The JavaScript pop(), shift(), or splice() methods are available to delete an element from an array. But because of the key-value pair in an object, deleting is more complicated.
+
+      syntex:
+      delete object
+      or
+      delete object.property
+
+      Note that, the delete operator only works on objects and not on variables or functions for example;,
+      let num = 5;
+      let sum = (a, b) => {
+         return a + b;
+      }
+      
+      console.log(delete num); //false
+      console.log(delete sum); //false
+       :-->
+       
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+
+let emp={
+   name:"Dhaval",
+   id:1001,
+   salary:1000000
+}
+
+document.getElementById("demo").innerHTML=`my name is : ${emp.name}. my id is : ${emp.id} and my salary is ${emp.salary}` ;
+
+delete emp.id;
+
+document.getElementById("demo1").innerHTML=`my name is : ${emp.name}. my id is : ${emp.id} and my salary is ${emp.salary}` ;
+</script>
